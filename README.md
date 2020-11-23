@@ -9,3 +9,5 @@ Act 4 of The Echoes of Asturón (fantasy group)
 
 Play here: https://sabeone.github.io/twisted-lesson-story/
 
+Video walkthrough (contains subtitles): https://youtu.be/0aYt70eTbP8
+
