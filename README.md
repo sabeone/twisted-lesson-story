@@ -7,5 +7,5 @@ The Twisted Lesson by Sabrina Wilson
 
 Act 4 of The Echoes of Asturón (fantasy group)
 
-Play here: ...
+Play here: https://sabeone.github.io/twisted-lesson-story/
 
