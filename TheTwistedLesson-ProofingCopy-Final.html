@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>The Twisted Lesson
+</title>
+<meta charset="utf-8">
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-storydata
+{
+	display: block !important;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>The Twisted Lesson
+</h1>
+<tw-storydata name="The Twisted Lesson" startnode="34" creator="Twine" creator-version="2.3.9" ifid="B11A0614-528D-435A-97F3-B07A6F5715FC" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#ui-bar {
+	display: none;
+}
+
+body, tw-story {
+  background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-size: 100%;
+  font-family: Garamond;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+#story {
+  margin-left: 3em;
+}
+
+#passages {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 60%;
+  display: inline-block;
+  min-height: 40%;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-left: 0%;
+  padding: 0px;
+}
+
+.passage {
+  margin: 0px;
+  padding: 2em;
+  color: black;
+  text-align:justify;
+}
+
+a {
+  font-weight: bold;
+  font-style: italic;
+  color: darkgreen;
+}
+
+a:hover {
+  font-weight: bold;
+  font-style: italic;
+  color: darkolivegreen
+}
+
+.kidnapper {
+  color: darkblue;
+  font-weight: bold;
+  font-family: Garamond;
+  font-size: 18px;
+}
+
+body.inside {
+  background-image: url('https://i.pinimg.com/originals/e5/fe/7a/e5fe7a60c352132d74621f1769644354.jpg');
+  background-size: 100%;
+}
+
+body.maps {
+    background-image: url('https://sun9-17.userapi.com/impf/SmqtvC9yRarUqal49LUDXxmaPcALVci9FDKwNw/fh1lm0DvgVk.jpg?size=807x454&quality=96&sign=a575f8c4485a474bc65dc070c37629e4');
+  background-size: 100%;
+}
+
+body.alchemy {
+    background-image: url('https://i.pinimg.com/originals/19/87/99/198799e0309711e7f9bb14011418e28f.jpg');
+  background-size: 100%;
+}
+
+body.books {
+    background-image: url('https://sun9-57.userapi.com/UGAeOruCjHvsOuFfC4rH7n7yO5wUBmikTWBUgg/Iqiar59Ukio.jpg');
+  background-size: 100%;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Wake Up" tags="inside" position="403,192" size="100,100">You wake up slumped against the cold bricks of an unfamiliar room. You look around, noticing a fireplace, some strange magical items near a door, and a messy room with bookshelves. How did you get here?
+
+You remember being at the Arena...and being kidnapped! How will you escape? Maybe there's something useful in your [[satchel|Check Satchel]]...</tw-passagedata><tw-passagedata pid="2" name="Check Satchel" tags="inside" position="405,321" size="100,100">&lt;&lt;set $satchelItem to either("scroll", "potion", "pendant")&gt;&gt;&lt;&lt;if $satchelItem is "scroll"&gt;&gt;Hmmm...looks like you have a scroll of rare memory spells. That maybe be useful &lt;&lt;elseif $satchelItem is "potion"&gt;&gt;Wow! A small vial of a sleeping potion. That may be useful &lt;&lt;elseif $satchelItem is "pendant"&gt;&gt;You have your mother's pendant! This helps you channel magic, so it may be useful &lt;&lt;endif&gt;&gt;[[later|Look Around]].</tw-passagedata><tw-passagedata pid="3" name="Look Around" tags="inside" position="405,471" size="100,100">Well, you can't see anyone else in the small house, and it doesn't sound like there's anyone else around. You try opening the door and the window, but they don't budge, not even with magic.
+
+You might as well look around and see if there is another way to escape. One part of the space catches your eye...
+
+[[Table with maps and diagrams|Map Table]]
+[[Table with alchemy tools|Alchemy Table]]
+[[Room with bookshelf|Bookshelf]]</tw-passagedata><tw-passagedata pid="4" name="Map Table" tags="maps" position="255,621" size="100,100">You brush a hand over the mess of inky papers, sliding them around to reveal a schematic of the room. That's strange...it looks just like this room! But what are these [[red markings|Find Secret Tunnel]]?</tw-passagedata><tw-passagedata pid="5" name="Alchemy Table" tags="alchemy" position="405,621" size="100,100">Among the hissing chemicals and glittering minerals, you notice a carefully preserved paper with neat writing: "TONIC OF HEALTH" and a long list of ingredients. Is your captor sick? &lt;&lt;if $satchelItem is "potion"&gt;&gt;Suddenly, you get an idea...
+
+[[Use sleeping potion|Use Potion]]
+[[Save sleeping potion for later|Hide]]&lt;&lt;else&gt;&gt;Maybe he is weak enough for you to [[overpower|Hide]]...&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Bookshelf" tags="books" position="555,621" size="100,100">You go to the room with the bookshelf, stepping around the messy bed. Among the old and worn books, you notice some charred scrolls. Why are they burned? You gently pick up a scroll and squint at the visible writing: "return the memory to the correct tem-". You realize these are probably about forbidden magic, which would explain why some manuscripts are badly damaged. You carefully [[place the scroll|Hide]] back on the shelf.</tw-passagedata><tw-passagedata pid="7" name="Find Secret Tunnel" tags="maps" position="255,771" size="100,100">A secret tunnel! You hold the map out in front of you, looking between it and the room until find the place where the entrance should be. You walk over to the right of the fireplace and push on different parts of the stone wall until you [[hear a click|Find Area Map]]!
+
+[[Enter the secret tunnel|Find Area Map]]
+[[Nevermind...don't go in the secret tunnel|Hide]]</tw-passagedata><tw-passagedata pid="8" name="Find Area Map" tags="maps" position="255,921" size="100,100">The tunnel is nearly pitch black. Ugh...hopefully there are no bugs in there, but maybe you can get out of this place! You get on your hands and knees and crawl inside, but after a few moments you hit packed soil. Too bad the tunnel is blocked off. 
+
+You crawl back to the room, but as you reach the entrance, your hand lands on something soft and wrinkly - it's another map! This one shows a house in a forest...is this where you are? You better [[keep this|Hide]]...</tw-passagedata><tw-passagedata pid="9" name="Hide" tags="inside" position="255,1071" size="100,100">Suddenly, you hear footsteps outside and the jangle of keys against a door. It must be the man who kidnapped you! Frantically, you look for a place to hide and [[scramble under a small, circular table|Found]] covered in a starry tablecloth and many candles.</tw-passagedata><tw-passagedata pid="10" name="Use Potion" tags="alchemy" position="405,771" size="100,100">You pick up the health tonic near the recipe and dump its sapphire blue contents into a potted plant on the desk. You get the sleeping potion from your satchel and pour it into the narrow glass tube, then mutter a simple color-changing spell so it looks like the health tonic.
+
+Perfect! Hopefully you can get your captor to drink it at the [[right time|Hide]].</tw-passagedata><tw-passagedata pid="11" name="Found" tags="inside" position="255,1221" size="100,100">You wait anxiously as you hear footsteps stomp closer to you. Everything goes quiet for a few seconds. Suddenly, a hand is on your boot and you are being dragged out from under the table! 
+
+&lt;span class="kidnapper"&gt;"Hello, Sephadel. No need to [[be afraid|I Saw You]]."&lt;/span&gt;</tw-passagedata><tw-passagedata pid="12" name="I Saw You" tags="inside" position="255,1371" size="100,100">&lt;&lt;set $captorMood to 0&gt;&gt;"How do you know me? Why did you bring me here?" you ask, surprised as the man offers a hand.
+
+&lt;span class="kidnapper"&gt;"I saw you at the arena. Using magic to heal that fighter,"&lt;/span&gt; he says gruffly, pulling you to your feet.
+
+[[No...that wasn't me. I don't know anything about magic!|Lie About Magic Use]]
+[[Well, I couldn't just let him die!|Truth About Magic Use]]</tw-passagedata><tw-passagedata pid="13" name="Lie About Magic Use" tags="inside" position="180,1521" size="100,100">&lt;&lt;set $captorMood to $captorMood - 1&gt;&gt;The man frowns and strokes his long, greying beard. &lt;span class="kidnapper"&gt;"Don't deny your magic. I saw you with my own eyes! I brought you back here so you wouldn't get in trouble. I know a lot about magic, and it's a shame to see it go to waste. I hoped we could work together."&lt;/span&gt;
+
+"I'm sorry," you say placatingly. "I just don't know who you are..."
+
+[[Honestly, I was looking around the house earlier and I can tell you have a lot of magical knowledge!|Work Together]]
+[[Work together? What would I have to do for you?|Be Annoying]]</tw-passagedata><tw-passagedata pid="14" name="Truth About Magic Use" tags="inside" position="330,1521" size="100,100">&lt;&lt;set $captorMood to $captorMood + 1&gt;&gt;The man nods. &lt;span class="kidnapper"&gt;"I knew you would understand. I'm glad you don't let your magic go to waste. See, I brought you here so you wouldn't get into trouble. I actually know quite a bit about magic! I hope we can work together."&lt;/span&gt;
+
+[[Honestly, I was looking around the room earlier...I can tell you have a lot of magical knowledge!|Work Together]]
+[[Work together? What would I have to do for you?|Be Annoying]]</tw-passagedata><tw-passagedata pid="15" name="Work Together" tags="inside" position="329,1652" size="100,100">&lt;&lt;set $captorMood to $captorMood + 1&gt;&gt;&lt;span class="kidnapper"&gt;"Ah, yes. I have saved many magical objects and books down here so our foolish King could not destroy them. We could be partners, doing great magic to show everyone that it is not something to be hated or feared. There is much for you to learn here..."&lt;/span&gt;
+
+You realize the kidnapper seems willing to teach you about magic, which he clearly takes seriously. You will be safe if you show you are interested in his plan to work together, but you don't want to offend him.
+
+[[Um, I would love to start learning to be your partner!|Mood]]
+[[I can pay you to teach me! I have gold coins in my pocket.|Shut Down]]</tw-passagedata><tw-passagedata pid="16" name="Be Annoying" tags="inside" position="181,1651" size="100,100">&lt;&lt;set $captorMood to $captorMood - 1&gt;&gt;The man's frown deepens. &lt;span class="kidnapper"&gt;"I guess you really don't understand,"&lt;/span&gt; he sighs. &lt;span class="kidnapper"&gt;"I thought you would make a great partner. We could do great things with magic, together. Make people see that it does not interfere nature, but helps along the natural course of things. You have quite a lot to learn before becoming my partner..."&lt;/span&gt;
+
+You realize the kidnapper seems willing to teach you about magic, which he clearly takes seriously. You will be safe if you show you are interested in his plan to work together, but you don't want to offend him any further.
+
+[[Um, I would love to start learning to be your partner!|Mood]]
+[[I can pay you to teach me! I have gold coins in my pocket.|Shut Down]]</tw-passagedata><tw-passagedata pid="17" name="Mood" tags="inside" position="106,1801" size="100,100">&lt;&lt;if $captorMood &lt; 0&gt;&gt;The man shakes his head and grumbles, &lt;span class="kidnapper"&gt;"Well, it's no use now. After talking to you, I see you're not the magician I thought you were."&lt;/span&gt; The man pushes the table off the rug as he talks and before you realize what's happening, he grabs your arm and drags you [[down a trap door]].&lt;&lt;else&gt;&gt;&lt;span class="kidnapper"&gt;"Very well,"&lt;/span&gt; the kidnapper says, pleased.&lt;span class="kidnapper"&gt;"Why don't you tell me what you want to learn first!"&lt;/span&gt;
+
+[[Can you show me how to use the alchemy tools?|Learn Alchemy]]
+[[I'd like to know more about the burned scrolls.|Learn Book]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Shut Down" tags="inside" position="256,1801" size="100,100">&lt;span class="kidnapper"&gt;"Bah!"&lt;/span&gt; the kidnapper growls. &lt;span class="kidnapper"&gt;"Magical knowledge isn't something you buy with money. It is a science, a craft you learn to respect. Although maybe not you. Hmph. You're not the magician I thought you were."&lt;/span&gt; 
+
+The man pushes the table off the rug and before you realize what's happening, he grabs your arm and drags you [[down a trap door]]. </tw-passagedata><tw-passagedata pid="19" name="Learn Alchemy" tags="alchemy" position="34,1953" size="100,100">&lt;&lt;if visited("Use Potion")&gt;&gt;&lt;span class="kidnapper"&gt;"A-ha! Great choice."&lt;/span&gt; You walk with the man to the alchemy table. &lt;span class="kidnapper"&gt;"Here's a little something I made to keep me healthy over the years."&lt;/span&gt; You hide a smile as the man picks up the glass tube and drinks your swapped sleeping potion. You talk to him for a few more minutes and [[watch as he falls asleep|Learn Nothing]] standing up!&lt;&lt;else&gt;&gt;&lt;span class="kidnapper"&gt;"Excellent choice!"&lt;/span&gt; You walk with the man to the alchemy table. &lt;span class="kidnapper"&gt;"Here's something you may be up for - not many magicians know how to do this anymore."&lt;/span&gt; He takes some powders and extracts from little glass containers. &lt;span class="kidnapper"&gt;"This is valerian root and peppermint, to induce visions, and passionflower to help you relax. When you mix them together, you can send impressions of thoughts or feelings into another person's head. You have to really concentrate. You may not get it on the first try. Here,"&lt;/span&gt; he gives you a pestle and mortar. &lt;span class="kidnapper"&gt;"[[Try grinding this valerian root|Trance]] - you have to get the proportions and granularity just right for it to work."&lt;/span&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Learn Book" tags="books" position="181,1951" size="100,100">&lt;span class="kidnapper"&gt;"Those memory spells are quite advanced. It can be dangerous to experiment with memory transference. I'm not sure you're ready..."&lt;/span&gt;
+
+&lt;&lt;if $satchelItem is "scroll"&gt;&gt;You show him the scrolls in your satchel. "I have some experience with memory magic....Here. You should have these." You [[give him your rare memory scrolls|Learn Memory Projection]] so he can add them to his bookshelf.&lt;&lt;elseif visited("Bookshelf")&gt;&gt;"I looked through the bookshelf earlier...I think I'm [[ready to learn|Learn Memory Projection]]!"&lt;&lt;else&gt;&gt;"Well...I haven't done memory magic before."
+
+&lt;span class="kidnapper"&gt;"Hmm...let's [[try something simpler|Learn Scrying]]."&lt;/span&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Learn Nothing" tags="alchemy" position="31,2101" size="100,100">You're not sure how long the sleeping potion will last, so you quickly move around the room, looking for an exit. You move around different objects, hoping to trigger some kind of secret doorway. You even try a few spells, but no luck.
+
+After awhile, you conclude that the house must be locked down with magic you are unfamiliar with. Maybe you should have learned something from the man instead of putting him to sleep...
+
+[["Hey!"|Potion Caught]]</tw-passagedata><tw-passagedata pid="22" name="Potion Caught" tags="inside" position="31,2251" size="100,100">You gasp as your captor suddenly appears next to you - wide-awake! He grabs you by the arm and drags you to a small closet in the bedroom. &lt;span class="kidnapper"&gt;"You're a trickster...I don't know if we should work together. You can just stay here until I figure out what to do with you,"&lt;/span&gt; he says disdainfully, locking the door and stomping off, leaving you [[squished between boxes]] full of glassware and strange ingrendients.</tw-passagedata><tw-passagedata pid="23" name="Trance" tags="alchemy" position="151,2101" size="100,100">After the man approves of the mixture, he gives more instructions. &lt;span class="kidnapper"&gt;"Now, take a very small sip so the trance state only lasts for a short time. Try to push a feeling into my head. This should be easy, since I am nearby."&lt;/span&gt;
+
+This is it, you realize - your chance to [[get help|Trance Projection]]!</tw-passagedata><tw-passagedata pid="24" name="Trance Projection" tags="alchemy" position="151,2251" size="100,100">You take a small sip of the herbal mixture, close your eyes, and focus on one person you know can help - your friend, the royal court jester, Ezrin. You think about the fear you felt when you first woke up in this place. &lt;&lt;if visited("Find Area Map")&gt;&gt;You also picture the map from the secret tunnel showing the house in the forest. &lt;&lt;endif&gt;&gt;As you silently chant "Ezrin" in your head, you feel a [[splash of cold water|Trance Ending]] on your face!</tw-passagedata><tw-passagedata pid="25" name="Trance Ending" tags="inside" position="151,2401" size="100,100">You gasp and open your eyes to find the man glaring suspiciously. &lt;span class="kidnapper"&gt;"I saw you mouthing a name. You were trying to contact someone else, weren't you! What a shame,"&lt;/span&gt; he shakes his head. &lt;span class="kidnapper"&gt;"We could have done great things together. Now I have to make sure no one can invade my house,"&lt;/span&gt; he mutters, locking you in the bedroom. He stomps away, leaving you trapped in the room, your magic still useless against the door and window. Hopefully Ezrin got your message and is on his way with help...</tw-passagedata><tw-passagedata pid="26" name="Learn Memory Projection" tags="books" position="415,2101" size="100,100">&lt;&lt;if $satchelItem is "scroll"&gt;&gt;The kidnapper beams. &lt;span class="kidnapper"&gt;"Oh, thank you very much! I always love to add to my collection,"&lt;/span&gt; he says as he places the scrolls gently on a shelf and picks up a burned one.&lt;&lt;else&gt;&gt;The kidnapper gets one of the burned scrolls from the shelf.&lt;&lt;endif&gt;&gt;
+
+&lt;span class="kidnapper"&gt;"Now - and be careful with this paper - this is quite an advanced spell. You must maintain concentration as you perform the spell. As you say this first part, think about the memory you want to send to someone else. The second part helps crystalize it in a single image, and this last bit helps you put it in the mind of the person you think about."&lt;/span&gt;
+
+The man helps you practice the different parts of the spell - out of order, of course, so the spell does not actually no anything yet.
+
+&lt;span class="kidnapper"&gt;"Hmmm, good!"&lt;/span&gt; he says, sounding distracted. &lt;span class="kidnapper"&gt;"Excuse me, I've just remembered something...I'll be back soon. Why don't you keep looking through these manuscripts?"&lt;/span&gt; He walks away, disappearing out of sight, leaving you [[alone with the memory spell|Project Memory]].</tw-passagedata><tw-passagedata pid="27" name="Learn Scrying" tags="books" position="286,2101" size="100,100">&lt;span class="kidnapper"&gt;"Scrying is not quite memory magic, but it is a way to send your thoughts to someone else."&lt;/span&gt; The man opens a dusty book from the bookshelf. &lt;span class="kidnapper"&gt;"See, you need something reflective, and when you say this part and think of the person, you open a connection to them. You can see them in the reflection. Then you speak what you want to send into their mind and say this part of the spell."&lt;/span&gt; 
+
+You try practicing the spell in front of a scratched mirror on the wall. Your captor goes over to the closet and instructs you to [[try opening a connection|Scry For Help]] to him in the mirror as he takes inventory.</tw-passagedata><tw-passagedata pid="28" name="Project Memory" tags="books" position="415,2251" size="100,100">This is your chance! Looking over the spell again, you are not sure if you will be able to communicate clear memories, but you should be able to get enough through to your mentor.&lt;&lt;if $satchelItem is "pendant"&gt;&gt;
+
+Oh! You remember you mother's pendant in your satchel. This will help you channel the magic so your spell will be more clear and powerful.
+&lt;&lt;endif&gt;&gt;
+
+Okay...[[let's do this|Doing the Projection]].</tw-passagedata><tw-passagedata pid="29" name="Doing the Projection" tags="books" position="415,2401" size="100,100">&lt;&lt;if $satchelItem is "pendant"&gt;&gt;You put the pendant on and hold it tightly in your hands. You start to whisper the spell, first thinking about everything that's happened since you were kidnapped from the arena, then focusing on your mentor's face. You feel the pendant heat up as your memories become loose, like they are detaching from yourself, and you have a faint sense of them slipping out of your mind and into the universe. You are certain your mentor [[received the message|Projection Detection]].&lt;&lt;else&gt;&gt;You start to whisper the spell, first thinking about everything that's happened since you were kidnapped from the arena, then focusing on your mentor's face. You feel parts of your memories detach from yourself, a little jumbled and fuzzy, but you feel the faint sense of these memories slipping out of your mind and into the universe. You are not sure how much of the message your mentor received, but you can only [[hope it's enough|Projection Detection]]...&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Projection Detection" tags="inside" position="415,2551" size="100,100">&lt;span class="kidnapper"&gt;"Hey!"&lt;/span&gt; Startled, your eyes snap open and you turn around to see the kidnapper standing in the room again. &lt;span class="kidnapper"&gt;"I knew I shouldn't have left you alone down here,"&lt;/span&gt; he grumbles. &lt;span class="kidnapper"&gt;"Bah!"&lt;/span&gt; He drags you [[out of the bedroom]]...</tw-passagedata><tw-passagedata pid="31" name="Scry For Help" tags="books" position="286,2251" size="100,100">Success! After a few minutes of concentration, the man appears in the mirror. You notice he is focused on counting some seeds in a jar. Suddenly, you realize this could be your only chance to contact someone for help. You think of your your mentor and [[perform the scrying spell again|Scry Performed]].</tw-passagedata><tw-passagedata pid="32" name="Scry Performed" tags="" position="286,2401" size="100,100">Your mentor's face floats into the mirror and you silently mouth out "Kidnapped from arena by magician. At house in forest. Help!" before finishing the spell. The mirror glows faintly and the face ripples away, leaving you [[staring into the mirror|Scry End]] at yourself...and the kidnapper!</tw-passagedata><tw-passagedata pid="33" name="Scry End" tags="inside" position="286,2551" size="100,100">&lt;span class="kidnapper"&gt;"Bah! I should have never showed you that,"&lt;/span&gt; he grumbles. &lt;span class="kidnapper"&gt;"Now don't get any more ideas. I have to go make sure no one you contacted can sneak into my house."&lt;/span&gt; He stomps away, locking the door behind you, leaving you [[trapped and alone]] once again.</tw-passagedata><tw-passagedata pid="34" name="Title" tags="" position="403,64" size="100,100">A Twisted Lesson
+The Echoes of Asturón: Act 4
+
+By Sabrina Wilson
+
+[[~open your eyes~|Wake Up]]&lt;&lt;set $satchelItem to ""&gt;&gt;&lt;&lt;set $captorMood to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="down a trap door" tags="inside" position="376,1799" size="100,100">&lt;span class="kidnapper"&gt;"Now you stay here until I figure out what to do with you."&lt;/span&gt; The man's voice is muffled as he shuts the door and you hear the table groan as its moved above you.
+
+"Hey! Let me out of here!" you shout as footsteps stomp away, leaving you alone in the hidden basement. Once again, your magic mysteriously fails to open the trap door. You can only hope someone realizes you are missing...</tw-passagedata><tw-passagedata pid="36" name="squished between boxes" tags="inside" position="31,2401" size="100,100">Noticing some bubbling liquids on a shelf and a few glowing boxes, you decide that attempting to use magic again is too risky - you don't want to cause a bad reaction with any of the items around you. You can only hope the kidnapper is not too angry about the sleeping potion and that someone will soon realize you are missing...</tw-passagedata><tw-passagedata pid="37" name="trapped and alone" tags="inside" position="286,2701" size="100,100">You try kicking the door and using your magic to open it, but to no avail. Frustrated, you sink to the floor, leaning against the bed. At least you are certain your mentor recieved the message.</tw-passagedata><tw-passagedata pid="38" name="out of the bedroom" tags="inside" position="415,2701" size="100,100">...and back to the room with the fireplace. You try to use magic to escape his hold, but strangely it just dissolves against his skin. He stuffs you into a hidden room and quickly shuts the trap door with a thud, dragging the rug and table above your head. "You won't get away with this!" you shout, certain that help will arrive soon.</tw-passagedata></tw-storydata>
+
+
+
+
+</body></html>
