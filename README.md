@@ -5,8 +5,7 @@ Act 4 of The Echoes of Asturón (fantasy group)
 Final project for LMC 4720 Interactive Narrative
 Licensed under Creative Commons Attribution Share Alike 4.0.
 
-Play here: https://sabeone.github.io/twisted-lesson-story/
-Video walkthrough: https://youtu.be/0aYt70eTbP8
+[Play here] (https://sabeone.github.io/twisted-lesson-story/) or watch the [video walkthrough] (https://youtu.be/0aYt70eTbP8)
 
 ### The Other Acts
 * [Act 1] (https://docs.google.com/document/d/1yM2MT1M6RcoRUHe31L3ck612Hw2ZOk3EQDq8I_XN2aY/edit?usp=sharing)
